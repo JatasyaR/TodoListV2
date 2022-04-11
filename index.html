@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDos List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+
+  <body>
+    <header>
+      <div id="header_container">
+        <a id="logo" href="index.html">White DEVs</a>
+        <nav>
+          <ul id="navbar">
+            <li class="nav-item">
+              <a href="index.html" class="NavBtns">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="About.html" class="NavBtns">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="NavBtns">Contact Us</a>
+            </li>
+          </ul>
+          <div id="hamBurger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <button id="clear" onclick="clearStorage()">Clear list</button>
+
+      <div class="MainContainer">
+        <div class="form_to_add">
+          <div id="errorMessage" class="hidden"></div>
+          <label for="title" id="titletag">Title</label>
+          <input type="text" id="title" />
+          <i
+            id="errorWarning1"
+            class="errorWarning fa-solid fa-circle-exclamation"
+          ></i>
+          <br />
+          <label for="description" id="desc">Description</label>
+          <i
+            id="errorWarning2"
+            class="errorWarning fa-solid fa-circle-exclamation"
+          ></i>
+          <textarea class="form-control" id="description" rows="3"></textarea>
+
+          <button id="add" onclick="Validation1()">Add to list</button>
+        </div>
+
+        <p id="Your_Items_p">Your Items</p>
+        <div id="Your_Items">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="titles">SNo</th>
+                <th scope="col" class="titles">Title</th>
+                <th scope="col" class="titles">Description</th>
+                <th scope="col" class="titles">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <p id="Tasks_Heading">Tasks</p>
+      <div id="Things">
+        <p class="Task-heading" id="tasks-done">Tasks Done</p>
+        <p class="Task-heading" id="tasks-cancel">Tasks Cancelled</p>
+
+        <button class="task-buttons" id="Done-button">Clear List</button>
+        <button class="task-buttons" id="Cancel-button">Clear List</button>
+
+        <div id="Things_Done" class="Things">
+          <div class="Things_Data">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="titles">SNo</th>
+                  <th scope="col" class="titles">Title</th>
+                  <th scope="col" class="titles">Description</th>
+                  <th scope="col" class="titles">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody_Done"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="Things_Cancelled" class="Things">
+          <div class="Things_Data">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="titles">SNo</th>
+                  <th scope="col" class="titles">Title</th>
+                  <th scope="col" class="titles">Description</th>
+                  <th scope="col" class="titles">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody_Cancelled"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="aboutContainer" id="aboutContainer">
+      <p id="about-Heading">About Us</p>
+
+      <div class="image" id="image">
+        <p id="about_h1">Jatasya Raval</p>
+        <p id="about_h2">Web Designer & Developer</p>
+
+        <p id="p_about">
+          <br />My name is Jatasya Raval and I am 14 years old, I live in
+          Gujarat Ahmedabad and I love to code. in future i will come up with
+          this kind of websites.
+        </p>
+      </div>
+      <!-- <a href="contact.html" class="btn" id="contact_karo">Contact Me</a> -->
+    </div>
+
+    <!-- <footer id="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icons">
+            <li>
+                <a href="#" title="logo-facebook">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="logo-twitter">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="logo-instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="menu">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">Team</a>
+            </li>
+        </ul>
+        <p>&copy 2022 WhiteDevs | All Rights Reserved</p>
+    </footer> -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/1a294808c0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="ToDoList.js"></script>
+  </body>
+</html>

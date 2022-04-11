@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script src="contact.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <h2 id="contact">Contact Me</h2>
+      <div id="error_message"></div>
+      <form
+        id="myform"
+        onsubmit="return Validation();"
+        action="https://formspree.io/f/mjvjkjze"
+        method="POST"
+      >
+        <div class="input_field">
+          <input type="text" placeholder="Name" id="name" name="name" />
+        </div>
+        <div class="input_field">
+          <input type="text" placeholder="Phone" id="phone" name="phone" />
+        </div>
+        <div class="input_field">
+          <input type="email" placeholder="Email" id="email" name="email" />
+        </div>
+        <div class="input_field">
+          <textarea
+            placeholder="Message"
+            id="message"
+            name="message"
+            rows="3"
+            cols="3"
+          ></textarea>
+        </div>
+        <div class="btn">
+          <input type="submit" id="Submit" />
+        </div>
+
+        <div class="Team">
+          <big>
+            <br />Web Developer: Jatasya Raval <br />Web Designer: Jatasya Raval
+            <br />Web Coder: Jatasya Raval
+          </big>
+        </div>
+        <div class="hidden_things">osdfjkwo</div>
+      </form>
+    </div>
+  </body>
+</html>

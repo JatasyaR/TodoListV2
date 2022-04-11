@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap");
+
+@media only screen and (max-width: 1000px) {
+  #hamBurger {
+    display: block;
+  }
+  #hamBurger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  #hamBurger.active .bar:nth-child(1) {
+    transform: translateY(0.25vh) rotate(45deg);
+  }
+  #hamBurger.active .bar:nth-child(3) {
+    transform: translateY(-1.3vh) rotate(-45deg);
+  }
+  #navbar {
+    left: -57vw;
+    top: -21vh;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--GreyColor);
+    min-height: 22vh;
+    width: 100vw;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    margin: 2.5vh 0;
+  }
+  #navbar.active {
+    top: 7vh;
+    left: -57vw;
+    box-shadow: 0vh 1.5vh 1vh 0.1vh rgba(0, 0, 0, 0.5);
+  }
+  #clear {
+    left: 70vw;
+    top: 7vh;
+  }
+  .form_to_add {
+    left: 9vw;
+    width: 80vw;
+    height: 37vh;
+  }
+  #titletag {
+    left: 2vw;
+    top: 3vh;
+  }
+  #title {
+    width: 75vw;
+    left: 2vw;
+    top: 3vh;
+  }
+  #desc {
+    top: 6vh;
+    left: 2vw;
+  }
+  #description {
+    top: 6vh;
+    left: 2vw;
+    width: 75vw;
+    height: 10vh;
+  }
+  #add {
+    top: 8vh;
+    width: 75vw;
+    left: 2vw;
+    height: 8vh;
+  }
+  #add::after {
+    height: 0vh;
+    width: 0vw;
+  }
+  #Your_Items_p {
+    top: 55vh;
+    left: 4vw;
+  }
+  #Your_Items {
+    top: 65vh;
+    left: 4.5vw;
+    width: 90vw;
+  }
+  #errorMessage {
+    top: -4vh;
+    font-size: 1.3vh;
+    min-width: 89vw;
+    left: -10vw;
+  }
+
+  #errorWarning1 {
+    top: 6.25vh;
+    left: 72vw;
+  }
+
+  #errorWarning2 {
+    top: 14vh;
+    left: 73vw;
+  }
+  .Settings {
+    height: 0.4vh;
+    width: 0.4vh;
+    left: 9vw;
+  }
+  .Settings::after {
+    left: 1.3vw;
+    height: 0.4vh;
+    width: 0.4vh;
+  }
+  .Settings::before {
+    left: -1.3vw;
+    height: 0.4vh;
+    width: 0.4vh;
+  }
+  .Settings_Border {
+    height: 2.5vh;
+    width: 2.5vh;
+    left: -2vw;
+    top: -1vh;
+  }
+  .Set_Btns_Border {
+    left: 4vw;
+    width: 33vw;
+  }
+  .loader {
+    left: 1vw;
+    width: 31vw;
+  }
+
+  .Del::after,
+  .Complete::after,
+  .Cancel::after {
+    width: 32vw;
+  }
+
+  .Del {
+    padding: 1vh 3.8vh;
+  }
+
+  .Cancel {
+    padding: 1vh 3.4vh;
+  }
+
+  .Complete {
+    padding: 1vh 2.1vh;
+  }
+
+  #Tasks_Heading {
+    left: 27vw;
+    top: 127vh;
+  }
+
+  .Task-heading {
+    height: 3vh;
+    position: absolute;
+    font-size: 4vh;
+  }
+  #Things {
+    left: 2vw;
+  }
+
+  #Things_Cancelled {
+    left: 1vw;
+    top: 38vh;
+  }
+
+  .Things {
+    width: 94vw;
+  }
+
+  #tasks-done {
+    left: 13.5vw;
+    width: 66vw;
+    top: 124vh;
+  }
+
+  #Things_Done {
+    top: 120vh;
+    left: 1vw;
+  }
+
+  .Things_Data {
+    font-size: 2vh;
+  }
+
+  #tasks-cancel {
+    top: 41vh;
+    left: 13vw;
+    width: 66vw;
+  }
+
+  #Cancel-button {
+    top: 34vh;
+    left: 16vw;
+  }
+
+  #Done-button {
+    left: 53vw;
+    top: 116vh;
+  }
+
+  .task-buttons {
+    width: 10vh;
+  }
+}
+
+@media only screen and (max-width: 2005px) {
+  #logo {
+    width: 57vw;
+    height: 5vh;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 399px) {
+  #clear {
+    left: 70vw;
+  }
+
+  #Cancel-button {
+    top: 34vh;
+    left: 16vw;
+  }
+
+  #Done-button {
+    left: 53vw;
+    top: 116vh;
+  }
+
+  #Your_Items_p {
+    left: 5vw;
+  }
+
+  #errorWarning1 {
+    left: 70vw;
+  }
+
+  #errorWarning2 {
+    left: 70vw;
+    top: 14.75vh;
+  }
+
+  #errorMessage {
+    top: -5vh;
+  }
+
+  #Tasks_Heading {
+    left: 22.5vw;
+  }
+
+  .Settings::after {
+    left: 1.5vw;
+  }
+
+  .Settings::before {
+    left: -1.5vw;
+  }
+
+  .Settings_Border {
+    left: -2.5vw;
+  }
+  .Set_Btns_Border {
+    width: 43vw;
+  }
+  .loader {
+    width: 41vw;
+  }
+  .Del::after,
+  .Complete::after,
+  .Cancel::after {
+    width: 41vw;
+  }
+
+  .Del {
+    padding: 1vh 3.2vh;
+  }
+  .Complete {
+    padding: 1vh 1.5vh;
+  }
+  .Cancel {
+    padding: 1vh 2.9vh;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  #clear {
+    left: 77vw;
+  }
+
+  #Cancel-button {
+    top: 34vh;
+    left: 47vw;
+  }
+
+  #Done-button {
+    left: 69vw;
+    top: 116vh;
+  }
+  #Your_Items_p {
+    left: 22.5vw;
+  }
+  #Tasks_Heading {
+    left: 32.5vw;
+  }
+}
